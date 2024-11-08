@@ -19,7 +19,8 @@
     <header class="md:mx-14 md:py-4 py-2 px-2">
         <nav class="container mx-aut p-3 flex justify-between items-center">
             <a href="#home" id="home">
-                <img src="./assets/loogo.svg" alt="Logo" class="object-cover bg-white/80 p-2 w-fit rounded-lg" />
+                <img src="./assets/loogo.svg" alt="Logo"
+                    class="object-cover bg-white/80 p-2 max-w-24 md:max-w-fit rounded-lg" />
             </a>
 
             <!-- Nav Bar -->
@@ -44,13 +45,12 @@
 
             <!-- Register & Dark Button -->
             <div class="flex gap-5">
-                <button
-                    class="hidden lg:block font-Plus font-normal text-base md:text-lg text-white leading-[150%] bg-primary py-1 md:py-3 px-2 md:px-4 rounded-lg hover:bg-red-700 hover:scale-105 hover:translate-y-1 transition-all duration-300 ease-in-out">
+                <button class="btn__primary hidden lg:block">
                     Register
                     Interest
                 </button>
                 <!-- dark & munu button -->
-                <button id="switch" class="">
+                <button id="switch">
                     <i
                         class="ri-moon-clear-line text-4xl text-primary-foreground hover:text-primary transition-all duration-300 ease-in-out">
                     </i>
@@ -64,13 +64,13 @@
             </div>
 
             <!-- Mobile Menu -->
-            <div id="mobileMenu" class="p-5 fixed bg-background inset-0 md:hidden">
+            <div id="mobileMenu" class="hidden p-5 fixed bg-background inset-0 md:hidden">
                 <div class="flex justify-between items-center">
                     <a href="#home" id="home">
                         <img src="./assets/loogo.svg" alt="Logo"
                             class="object-cover bg-white/80 p-2 max-w-24 rounded-lg" />
                     </a>
-                    <div class="space-x-2">
+                    <div class="space-x-5">
                         <button id="switchMB">
                             <i
                                 class="ri-moon-clear-line text-4xl text-primary-foreground hover:text-primary transition-all duration-300 ease-in-out">
@@ -96,6 +96,13 @@
                     <a href="#contact" class="mobile__menu">
                         Contact Us
                     </a>
+                </div>
+                <div class="h-[0.5px] bg-primary-foreground my-10"></div>
+                <div class="text-center">
+                    <button class="btn__primary">
+                        Register
+                        Interest
+                    </button>
                 </div>
             </div>
         </nav>

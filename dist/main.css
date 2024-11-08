@@ -72,7 +72,11 @@
 }
 
 @layer utilities {
+  .btn__primary {
+    @apply font-Plus font-normal text-base md:text-lg text-white leading-[150%] bg-primary py-1 md:py-3 px-2 md:px-4 rounded-lg hover:bg-red-700 hover:scale-105 hover:translate-y-1 transition-all duration-300 ease-in-out;
+  }
+
   .mobile__menu {
-    @apply block font-Plus font-normal text-base text-center text-primary-foreground hover:text-primary leading-[150%] no-underline transition-all duration-300 ease-in-out;
+    @apply block space-y-8 font-Plus font-normal text-base text-center text-primary-foreground hover:text-primary leading-[150%] no-underline transition-all duration-300 ease-in-out;
   }
 }
