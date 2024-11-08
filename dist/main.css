@@ -79,4 +79,8 @@
   .mobile__menu {
     @apply block space-y-8 font-Plus font-normal text-base text-center text-primary-foreground hover:text-primary leading-[150%] no-underline transition-all duration-300 ease-in-out;
   }
+
+  .count__items {
+    @apply flex flex-col items-center text-primary-foreground font-Inter font-normal text-xs md:text-lg;
+  }
 }
